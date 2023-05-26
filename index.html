@@ -17,17 +17,42 @@
         <input type="text" placeholder="Cari....." />
       </form>
       <ul>
-        <li>Beranda</li>
-        <li>Artikel</li>
+        <li><a href="#landing">Beranda</a></li>
+        <li><a href="#artikel">Artikel</a></li>
+        <li><a onclick="login()">Login</a></li>
       </ul>
     </nav>
 
-    <section class="landing">
+    <div id="overlay"></div>
+
+    <div class="login" id="login-page">
+      <h1>Login</h1>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" />
+      <label for="password">Password</label>
+      <input type="password" name="pwd" id="pwd" />
+      <div class="verif">
+        <div>
+          <input type="checkbox" name="verif" id="verif" />
+          <label for="verif">Ingat Saya </label>
+        </div>
+        <p>Lupa Password</p>
+      </div>
+      <button onclick="verif()">Login</button>
+    </div>
+
+    <div class="verifikasi" id="verifikasi">
+      <img src="img/captcha.jpg" alt="" />
+      <input type="text" id="verifikasi-captcha" />
+      <button onclick="verifikasi()">Verifikasi</button>
+    </div>
+
+    <section class="landing" id="landing">
       <div class="landing-content">
         <h1>Solusi Kesehatan Terlengkap</h1>
         <p>
           Chat dokter, kunjungi rumah sakit, beli obat, cek lab dan update
-          informasi seputar kesehatan, semua bisa di Halodoc!
+          informasi seputar kesehatan, semua bisa di VitaCare!
         </p>
         <div class="button">
           <div>
@@ -56,7 +81,6 @@
             <p>Toko Kesehatan</p>
           </div>
         </div>
-        <button class="get-started">Ayo Sakit</button>
       </div>
     </section>
     <section class="kategori">
@@ -87,7 +111,7 @@
           </div>
         </div>
         <div>
-          <h2>Layanan Khusus</h2>
+          <h2>Penunjang Kesehatan</h2>
           <div class="kategori-items">
             <div class="item">
               <img src="img/pngwing.com (8).png" width="60" alt="" />
@@ -113,6 +137,127 @@
         </div>
       </div>
     </section>
-    <section></section>
+
+    <section class="promo">
+      <h1>Penawaran Menarik</h1>
+      <img src="img/Mesa de trabajo 1@4x.png" width="100%" alt="" />
+    </section>
+
+    <section id="artikel">
+      <div class="artikel">
+        <h1>Artikel yang Sering di Cari</h1>
+        <div class="artikel-filter">
+          <ul>
+            <li>Terpopuler</li>
+            <li>Terbaru</li>
+            <li>Diabetes</li>
+            <li>Hepatitis</li>
+            <li>Olahraga</li>
+          </ul>
+          <p>Lihat Semua</p>
+        </div>
+        <div class="artikel-content">
+          <div class="artikel-card">
+            <img src="img/acne-1606765_1280.jpg" width="350" alt="" />
+            <div class="text">
+              <h4>
+                <a href="artikel.html"
+                  >Kenalan dengan Acne Conglobata, Jerawat Parah yang Langka</a
+                >
+              </h4>
+              <p class="artikel-kategori">Jerawat</p>
+              <p class="artikel-text">
+                "Acne conglobata merupakan kasus jerawat parah yang langka, yang
+                ditandai dengan munculnya nodul,...
+              </p>
+            </div>
+          </div>
+          <div class="artikel-card">
+            <img
+              src="img/pexels-mateusz-feliksik-7974805.jpg"
+              width="350"
+              alt=""
+            />
+            <div class="text">
+              <h4>10 Manfaat Es Jeruk dan Resep untuk Membuatnya</h4>
+              <p class="artikel-kategori">Minuman Sehat</p>
+              <p class="artikel-text">
+                "Selain menyegarkan, es jeruk juga bisa menghidrasi tubuh,
+                meningkatkan imun tubuh, hingga menurunkan...
+              </p>
+            </div>
+          </div>
+          <div class="artikel-card">
+            <img src="img/pexels-pixabay-40751.jpg" width="350" alt="" />
+            <div class="text">
+              <h4>Catat, Ini Waktu Terbaik untuk Olahraga Jogging</h4>
+              <p class="artikel-kategori">Olahraga</p>
+              <p class="artikel-text">
+                "Baik pagi maupun sore hari adalah waktu terbaik untuk jogging,
+                tergantung pada kebutuhan dan manfaat yang ingin diperoleh...
+              </p>
+            </div>
+          </div>
+          <div class="artikel-card">
+            <img src="img/woman-698964_1280.jpg" width="350" alt="" />
+            <div class="text">
+              <h4>Gejala Awal Sinusitis yang Sering Disalahartikan</h4>
+              <p class="artikel-kategori">Sinusitis</p>
+              <p class="artikel-text">
+                "Penyakit Sinusitis sering disalahartikan, karena gejalanya
+                dianggap sebagai flu biasa. Itulah pentingnya mengenali...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h1>Vita<span>Care</span></h1>
+      <div class="content">
+        <table>
+          <tbody>
+            <tr>
+              <td>FAQ</td>
+              <td>Karir</td>
+            </tr>
+            <tr>
+              <td>Blog</td>
+              <td>Security</td>
+            </tr>
+            <tr>
+              <td>Syarat & Ketentuan</td>
+              <td>Media</td>
+            </tr>
+            <tr>
+              <td>Kebijakan Privasi</td>
+            </tr>
+            <tr>
+              <td>Promo</td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <h4>Layanan Pengaduan</h4>
+          <h4>PT VitaCare Corp</h4>
+          <p>
+            Jl. Kuningan, Kuningan, Jawa Barat <br />
+            help@vitacere.com / 021-346-567
+          </p>
+        </div>
+        <div>
+          <h4>Download App di</h4>
+          <img src="img/app-store-badge-us-white.webp" width="100" alt="" />
+          <img src="img/google-play-badge-us.webp" alt="" width="100" />
+        </div>
+      </div>
+      <p>
+        Copyright 2023 |
+        <a href="mailto:arfahnurfauziah11@gmail.com">Arfah Nurfauziah</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
